@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mexicoReLindo.css">
+    <title>Mexico "typing animate-cursor" demo</title>
+</head>
+<body style="background-color: rgb(146, 144, 144); display: flex;
+justify-content: center;">
+<div style=" border: 1px solid rgb(185, 183, 183);
+             padding: 0 1rem;
+             margin: 1rem;
+             background-color: #464746; 
+             width: 90%; ">
+    <h3 class="text-brand-h3 font-semibold text-brand-complementary">Queremos que alcances<span class="text-brand-primary"> tus meta</span><span class="border-b-4 border-solid animate-cursor text-brand-primary">s</span></h3>    
+    <br>
+    <p>En este ejemplo vemos un cursor animado tipo introducción de texto en terminal<br>
+    Este efecto está en la hoja de estilo copiada del sitio web de <a href="https://kodemia.mx/" class="text-brand-primary">kodemia.mx</a><br></p>
+    <br>
+
+    <p>Concretamente la parte del código que define este cursor parpadeando es la siguiente:<br><br>
+    Dentro del título H3 la letra "s" esta rodeada de la etiqueta span:<br>
+    <pre><code>
+        &lt;span class="border-b-4 border-solid animate-cursor text-brand-primary"&gt;s&lt;/span&gt;
+    </code></pre>
+    Partes del código CSS:<br>
+    <pre><code>
+        .border-b-4{border-bottom-width:4px}
+        .border-solid{border-style:solid}
+        .animate-cursor{-webkit-animation:cursor .8s linear infinite alternate;animation:cursor .8s linear infinite alternate}
+        .text-brand-primary{--tw-text-opacity:1;color:rgb(255 155 55/var(--tw-text-opacity))}
+        .text-brand-complementary{--tw-text-opacity:1;color:rgb(255 155 251/var(--tw-text-opacity))}
+        .hover\:text-brand-primary:hover{--tw-text-opacity:1;color:rgb(0 255 255/var(--tw-text-opacity))}
+    </code></pre>
+    <br>
+    Primeramente incluí la hoja de estilos original - <span class="text-brand-complementary">mexicoStyle.css</span><br>
+    Después manualmente limpié lo que pude obteniendo <span class="text-brand-complementary">mexicoLindo.css</span><br>
+    Aún así, me parecía que había demasiado código dentro así que busqué una forma de limpiarlo automática.<br>
+    <a href="https://purifycss.online/" class="text-brand-primary">https://purifycss.online/</a> fué la solución, resultando en un archivo mucho más ligero - <span class="text-brand-complementary">mexicoReLindo.css</span> aunque se ha vuelto a poner todo en una línea. Para su mejor lectura debería añadir intros...<br><br>
+
+</p>
+</div>
+</body>
+</html>
